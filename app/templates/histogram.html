@@ -1,0 +1,12 @@
+<div
+        class="column"
+        style="
+        background-color: {{col.color}};
+        height: {{col.value}}%;
+        left:{{col.pos}}px;
+        "
+        ng-repeat="col in hist.columns"
+        tooltip="{{col.value}}"
+        >
+</div>
+<div class="caption">{{hist.caption}}</div>

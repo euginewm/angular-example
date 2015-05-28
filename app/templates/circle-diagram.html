@@ -1,0 +1,18 @@
+<div class="wrapper pull-left">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-triangle">
+        <polygon points="0,0 0,100 100,100, 100,0" fill="{{circle.snapshot.FillBack}}" />
+        <polygon
+                points="{{circle.snapshot.Points.a}} {{circle.snapshot.Points.b}} {{circle.snapshot.Points.c}} {{circle.snapshot.Points.d}}"
+                fill="{{circle.snapshot.FillFront}}"
+                stroke-width="0"
+                height="100"
+                width="100"
+                />
+        <circle cx="50" cy="50" r="43" fill="#fff" />
+    </svg>
+    <div class="value" style="color: {{circle.color}}">{{circle.percent}} <span>%</span></div>
+</div>
+<div class="legend pull-left">
+    <div class="normal-value">{{circle.value}}</div>
+    <div class="normal-caption">{{circle.caption}}</div>
+</div>
